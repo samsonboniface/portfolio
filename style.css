@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    background: #000;
+    padding: 50px 10%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+/* ── HEADER ── */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navber a {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.navber a:hover,
+.navber a.active {
+    color: #fff;
+    border-color: #e94560;
+}
+
+/* ── PAGE SWITCHING — key rules ── */
+.page {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 85px;
+    color: #fff;
+    overflow: hidden;
+    animation: fadeIn 0.4s ease;
+}
+
+.page.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── BUTTON ── */
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background: #e94560;
+    border: 2px solid #e94560;
+    border-radius: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #e94560;
+}
+
+/* ── SOCIAL ICONS ── */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #e94560;
+    border-color: #e94560;
+}
+
+/* ════════════════════════
+   HOME
+════════════════════════ */
+.home {
+    align-items: center;
+    justify-content: space-between;
+    padding: 85px 8% 0;
+    gap: 40px;
+}
+
+.home-detail {
+    flex: 1;
+}
+
+.home-detail h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.home-detail h2 {
+    font-size: 28px;
+    color: #e94560;
+    margin: 8px 0 16px;
+    font-weight: 500;
+}
+
+.home-detail p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    margin-bottom: 28px;
+    max-width: 480px;
+}
+
+.download-socail {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.home-imag {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #e94560;
+    box-shadow: 0 0 30px rgba(233, 69, 96, 0.4);
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ════════════════════════
+   ABOUT
+════════════════════════ */
+.about {
+    align-items: center;
+    justify-content: center;
+    padding: 85px 8% 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.about-img .img-box {
+    width: 260px;
+    height: 260px;
+}
+
+.about-detail {
+    flex: 1;
+}
+
+.about-detail h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.about-detail h2 span,
+.project-content h2 span,
+.contact-content h2 span {
+    color: #e94560;
+}
+
+.about-detail h3 {
+    font-size: 22px;
+    color: #e94560;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.about-detail p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    max-width: 500px;
+}
+
+.about-info {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 28px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 14px 22px;
+}
+
+.info-item .number {
+    font-size: 28px;
+    font-weight: 700;
+    color: #e94560;
+}
+
+.info-item .label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 4px;
+}
+
+/* ════════════════════════
+   PROJECT
+════════════════════════ */
+.project {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 8% 0;
+}
+
+.project-content {
+    width: 100%;
+}
+
+.project-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #e94560;
+    box-shadow: 0 10px 30px rgba(233, 69, 96, 0.2);
+}
+
+.card-img {
+    height: 160px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.project-card:hover .card-img img {
+    transform: scale(1.05);
+}
+
+.card-info {
+    padding: 18px;
+}
+
+.card-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.card-info p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+/* ════════════════════════
+   CONTACT
+════════════════════════ */
+.contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 8% 0;
+}
+
+.contact-content {
+    width: 100%;
+}
+
+.contact-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-item i {
+    font-size: 22px;
+    color: #e94560;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(233, 69, 96, 0.1);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 18px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: 0.3s;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #e94560;
+    background: rgba(233, 69, 96, 0.05);
+}
+
+.contact-form .btn {
+    align-self: flex-start;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}

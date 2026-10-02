@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <a href="#" class="logo">portfolio.</a>
+        <nav class="navber">
+            <a href="#" class="nav-link active" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="about">About</a>
+            <a href="#" class="nav-link" data-page="project">Project</a>
+            <a href="#" class="nav-link" data-page="contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class="page home active" id="home">
+        <div class="home-detail">
+            <h1>Samson Boniface</h1>
+            <h2>Frontend Developer</h2>
+            <p>come let work together for a better purpose.
+                moving forward is where we go.
+                no food for lazy man
+            </p>
+            <div class="download-socail">
+                <a href="Samson_Boniface_CV.docx" class="btn" download>Download CV</a>
+                <div class="social-icons">
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-imag">
+            <div class="img-box">
+                <img src=".profile.jpg" alt="Profile photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="page about" id="about">
+        <div class="about-content">
+            <div class="about-img">
+                <div class="img-box">
+                    <img src=".profile.jpg" alt="Profile photo">
+                </div>
+            </div>
+            <div class="about-detail">
+                <h2>About <span>Me</span></h2>
+                <h3>Frontend Developer</h3>
+                <p>together we go. 
+                    work head and have more,
+                    no food for lazy man
+
+                </p>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="number">10+</span>
+                        <span class="label">web devoloper</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="number">2+</span>
+                        <span class="label">graphic desing</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="number">5+</span>
+                        <span class="label">progammer</span>
+                    </div>
+                </div>
+                <a href="#" class="btn" download>Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section class="page project" id="project">
+        <div class="project-content">
+            <h2>My <span>Projects</span></h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="card-img">
+                        <img src= alt="Project 1">
+                    </div>
+                    <div class="card-info">
+                        <h3>Project One</h3>
+                        <p> landing page.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-img">
+                        <img ".jpeg" src="image/project2.jpeg" alt="Project 2">
+                    </div>
+                    <div class="card-info">
+                        <h3>Project Two</h3>
+                        <p>web devoloper.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-img">
+                        <img src=".jpeg" alt="Project 3">
+                    </div>
+                    <div class="card-info">
+                        <h3>Project Three</h3>
+                        <p>Portfolio website.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="page contact" id="contact">
+        <div class="contact-content">
+            <h2>Contact <span>Me</span></h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="ri-mail-fill"></i>
+                        <span>user name</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ri-phone-fill"></i>
+                        <span>email</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ri-phone-fill"></i>
+                        <span>phone number</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="ri-map-pin-fill"></i>
+                        <span>Your, Country</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="ri-github-fill"></i></a>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                        <a href="#"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="email" placeholder="Your phone" required>
+                    <input type="text" placeholder="country">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
