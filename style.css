@@ -287,8 +287,9 @@ header {
 .project {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 85px 8% 0;
+    overflow-y: auto;
 }
 
 .project-content {
@@ -304,7 +305,7 @@ header {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
     gap: 24px;
 }
 
@@ -353,6 +354,89 @@ header {
     color: rgba(255, 255, 255, 0.65);
     margin-bottom: 14px;
     line-height: 1.5;
+}
+
+.smartnote-card-link {
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.smartnote-card-preview {
+    display: grid;
+    place-items: center;
+    padding: 12px;
+    background: radial-gradient(ellipse at 86% 12%, rgba(124, 224, 195, 0.2), transparent 48%), #172438;
+}
+
+.smartnote-preview-window {
+    width: min(100%, 300px);
+    min-height: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 13px;
+    border: 1px solid rgba(55, 92, 70, 0.12);
+    border-radius: 8px;
+    background: #fbfcf8;
+    color: #24342d;
+}
+
+.smartnote-preview-brand {
+    align-self: stretch;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e8eee6;
+    color: #294a39;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.smartnote-preview-brand i,
+.smartnote-preview-brand span {
+    color: #398365;
+}
+
+.smartnote-preview-eyebrow {
+    color: #78877c;
+    font-size: 6px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.smartnote-preview-window strong {
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.smartnote-preview-upload {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 8px;
+    border: 1px solid #dfe9df;
+    border-radius: 5px;
+    color: #47745a;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.smartnote-preview-upload i:last-child {
+    margin-left: auto;
+}
+
+.smartnote-project .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.smartnote-card-link:focus-visible {
+    outline: 2px solid #e94560;
+    outline-offset: -3px;
 }
 
 /* ════════════════════════
