@@ -431,6 +431,10 @@ header {
     gap: 20px;
 }
 
+.project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}
+
 .service-card {
     position: relative;
     min-height: 240px;
