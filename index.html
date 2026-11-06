@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Samson Boniface is a frontend developer creating responsive, user-friendly websites.">
+    <meta name="theme-color" content="#0b1020">
+    <title>Samson Boniface | Frontend Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,155 +13,203 @@
 <div class="container">
 
     <header>
-        <a href="#" class="logo">portfolio.</a>
+        <a href="#home" class="logo">Samson<span>.</span></a>
         <nav class="navber">
-            <a href="#" class="nav-link active" data-page="home">Home</a>
-            <a href="#" class="nav-link" data-page="about">About</a>
-            <a href="#" class="nav-link" data-page="project">Project</a>
-            <a href="#" class="nav-link" data-page="contact">Contact</a>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#project" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link nav-contact">Contact</a>
         </nav>
     </header>
 
-    <!-- HOME -->
-    <section class="page home active" id="home">
+    <main>
+    <section class="page home" id="home">
         <div class="home-detail">
-            <h1>Samson Boniface</h1>
-            <h2>Frontend Developer</h2>
-            <p>come let work together for a better purpose.
-                moving forward is where we go.
-                no food for lazy man
-            </p>
+            <span class="eyebrow"><span class="status-dot"></span> FRONTEND DEVELOPER</span>
+            <h1>Hi, I’m <span>Samson Boniface</span></h1>
+            <h2>I build thoughtful experiences for the web.</h2>
+            <p>I create clean, responsive websites that make ideas easy to explore and work beautifully across devices.</p>
             <div class="download-socail">
                 <a href="Samson_Boniface_CV.docx" class="btn" download>Download CV</a>
-                <div class="social-icons">
-                    <a href="#"><i class="ri-github-fill"></i></a>
-                    <a href="#"><i class="ri-linkedin-fill"></i></a>
-                    <a href="#"><i class="ri-twitter-x-fill"></i></a>
-                    <a href="#"><i class="ri-youtube-fill"></i></a>
-                </div>
+                <a href="#contact" class="text-link">Let’s work together <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+            </div>
+            <div class="social-icons" aria-label="Social profiles">
+                <a href="https://github.com/samsonboniface" target="_blank" rel="noopener noreferrer" aria-label="Visit Samson Boniface on GitHub"><i class="ri-github-fill"></i></a>
+                <a href="https://x.com/samsonboniface" target="_blank" rel="noopener noreferrer" aria-label="Visit Samson Boniface on X"><i class="ri-twitter-x-fill"></i></a>
+                <a href="https://whatsapp.com/channel/0029Vb73QUo5kg773F2hHt3i" target="_blank" rel="noopener noreferrer" aria-label="Visit Samson Boniface on WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61589237834141" target="_blank" rel="noopener noreferrer" aria-label="Visit Samson Boniface on Facebook"><i class="ri-facebook-fill"></i></a>
             </div>
         </div>
         <div class="home-imag">
-            <div class="img-box">
-                <img src=".profile.jpg" alt="Profile photo">
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="page about" id="about">
-        <div class="about-content">
-            <div class="about-img">
+            <div class="portrait-frame">
+                <div class="portrait-orbit"></div>
                 <div class="img-box">
-                    <img src=".profile.jpg" alt="Profile photo">
+                    <img src="profile.jpg" alt="Samson Boniface, frontend developer">
                 </div>
+                <div class="portrait-caption"><i class="ri-code-s-slash-line" aria-hidden="true"></i><span>Building for the web</span></div>
             </div>
+        </div>
+    </section>
+
+    <section class="page about section-block" id="about">
+        <div class="section-heading">
+            <span class="eyebrow">A LITTLE ABOUT ME</span>
+            <h2>Design-minded. <span>Detail-driven.</span></h2>
+        </div>
+        <div class="about-content">
             <div class="about-detail">
-                <h2>About <span>Me</span></h2>
-                <h3>Frontend Developer</h3>
-                <p>together we go. 
-                    work head and have more,
-                    no food for lazy man
-
-                </p>
-                <div class="about-info">
-                    <div class="info-item">
-                        <span class="number">10+</span>
-                        <span class="label">web devoloper</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="number">2+</span>
-                        <span class="label">graphic desing</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="number">5+</span>
-                        <span class="label">progammer</span>
-                    </div>
+                <p>I’m a frontend developer who enjoys turning ideas into useful, polished web experiences. I care about clear layouts, responsive design, and the small details that make a site feel easy to use.</p>
+                <p>From a first sketch to the finishing touches, I aim to build websites that look considered and work reliably on every screen.</p>
+                <a href="#contact" class="text-link">Have a project in mind? <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+            </div>
+            <div class="skills-panel">
+                <h3>What I work with</h3>
+                <div class="skill-list">
+                    <span><i class="ri-check-line" aria-hidden="true"></i> HTML</span>
+                    <span><i class="ri-check-line" aria-hidden="true"></i> CSS</span>
+                    <span><i class="ri-check-line" aria-hidden="true"></i> JavaScript</span>
+                    <span><i class="ri-check-line" aria-hidden="true"></i> Responsive design</span>
+                    <span><i class="ri-check-line" aria-hidden="true"></i> UI implementation</span>
                 </div>
-                <a href="#" class="btn" download>Download CV</a>
             </div>
         </div>
     </section>
 
-    <!-- PROJECT -->
-    <section class="page project" id="project">
+    <section class="page services section-block" id="services">
+        <div class="services-content">
+            <div class="section-heading">
+                <span class="eyebrow">HOW I CAN HELP</span>
+                <h2>Services built around <span>your goals.</span></h2>
+                <p>Practical frontend support to help your next idea make its way onto the web.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <span class="service-icon"><i class="ri-code-s-slash-line" aria-hidden="true"></i></span>
+                    <span class="card-index">01</span>
+                    <h3>Website development</h3>
+                    <p>Purposeful websites built around your content, brand, and audience.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon"><i class="ri-smartphone-line" aria-hidden="true"></i></span>
+                    <span class="card-index">02</span>
+                    <h3>Responsive design</h3>
+                    <p>Carefully adapted layouts that feel natural on mobile, tablet, and desktop.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon"><i class="ri-tools-line" aria-hidden="true"></i></span>
+                    <span class="card-index">03</span>
+                    <h3>Website improvements</h3>
+                    <p>Thoughtful updates to existing pages, content, and user experience.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="page project section-block" id="project">
         <div class="project-content">
-            <h2>My <span>Projects</span></h2>
+            <div class="section-heading">
+                <span class="eyebrow">SELECTED WORK</span>
+                <h2>A few things I’ve <span>worked on.</span></h2>
+                <p>A small selection of web and design work.</p>
+            </div>
             <div class="project-grid">
-                <div class="project-card">
+                <article class="project-card">
                     <div class="card-img">
-                        <img src="2.jpg" alt="Project 1">
+                        <img src="2.jpg" alt="Preview of a landing page project" loading="lazy">
                     </div>
                     <div class="card-info">
-                        <h3>Project One</h3>
-                        <p> landing page.</p>
-                        <a href="#" class="btn">View Project</a>
+                        <span class="project-type">WEB DESIGN</span>
+                        <h3>Landing page</h3>
+                        <p>A focused page concept designed to introduce a product or service clearly.</p>
                     </div>
-                </div>
-                <div class="project-card">
+                </article>
+                <article class="project-card">
                     <div class="card-img">
-                        <img src="3.jpg" alt="Project 2">
+                        <img src="3.jpg" alt="Preview of a website design project" loading="lazy">
                     </div>
                     <div class="card-info">
-                        <h3>Project Two</h3>
-                        <p>web devoloper.</p>
-                        <a href="#" class="btn">View Project</a>
+                        <span class="project-type">WEB DEVELOPMENT</span>
+                        <h3>Website interface</h3>
+                        <p>A web experience with an emphasis on structure, readability, and responsive layouts.</p>
                     </div>
-                </div>
-                <div class="project-card">
+                </article>
+                <article class="project-card">
                     <div class="card-img">
-                        <img src=".jpeg" alt="Project 3">
+                        <img src="project-three.jpeg" alt="Preview of a personal portfolio website" loading="lazy">
                     </div>
                     <div class="card-info">
-                        <h3>Project Three</h3>
-                        <p>Portfolio website.</p>
-                        <a href="#" class="btn">View Project</a>
+                        <span class="project-type">PERSONAL PROJECT</span>
+                        <h3>Portfolio website</h3>
+                        <p>A personal space to share selected work, introduce my services, and get in touch.</p>
                     </div>
-                </div>
+                </article>
+                <article class="project-card smartnote-card">
+                    <div class="card-img smartnote-preview" aria-hidden="true">
+                        <div class="smartnote-window">
+                            <div class="smartnote-preview-top">
+                                <span class="smartnote-logo"><i class="ri-file-list-3-line" aria-hidden="true"></i> smartnote<span>.</span></span>
+                                <span class="smartnote-online"><i></i> STUDY SPACE</span>
+                            </div>
+                            <div class="smartnote-preview-content">
+                                <span class="smartnote-preview-label">YOUR NOTES, BUT CLEARER</span>
+                                <strong>Make your notes<br>make sense.</strong>
+                                <div class="smartnote-preview-upload"><i class="ri-upload-cloud-2-line" aria-hidden="true"></i><span>Upload notes &amp; ask</span><i class="ri-arrow-right-line" aria-hidden="true"></i></div>
+                                <div class="smartnote-preview-result"><i class="ri-sparkling-2-line" aria-hidden="true"></i><span>Clear explanations. Better studying.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="project-type">AI STUDY TOOL</span>
+                        <h3>SmartNote</h3>
+                        <p>An AI study buddy that turns uploaded notes into clear explanations, key points, and practice questions.</p>
+                        <a class="smartnote-link" href="https://github.com/samsonboniface/smartnote" target="_blank" rel="noopener noreferrer">View on GitHub <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="page contact" id="contact">
+    <section class="page contact section-block" id="contact">
         <div class="contact-content">
-            <h2>Contact <span>Me</span></h2>
+            <div class="section-heading">
+                <span class="eyebrow">LET’S CONNECT</span>
+                <h2>Have an idea? <span>Let’s talk.</span></h2>
+                <p>Tell me a little about what you’re working on. I’d be glad to hear from you.</p>
+            </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="ri-mail-fill"></i>
-                        <span>user name</span>
+                    <div class="contact-note">
+                        <span class="contact-note-icon"><i class="ri-chat-smile-3-line" aria-hidden="true"></i></span>
+                        <h3>Let’s make something useful.</h3>
+                        <p>Whether you need a new website or help improving an existing one, send me a message.</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="ri-phone-fill"></i>
-                        <span>email</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="ri-phone-fill"></i>
-                        <span>phone number</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="ri-map-pin-fill"></i>
-                        <span>Your, Country</span>
-                    </div>
-                    <div class="social-icons">
-                        <a href="#"><i class="ri-github-fill"></i></a>
-                        <a href="#"><i class="ri-linkedin-fill"></i></a>
-                        <a href="#"><i class="ri-twitter-x-fill"></i></a>
-                        <a href="#"><i class="ri-youtube-fill"></i></a>
+                    <div class="social-icons" aria-label="Social profiles">
+                        <a href="https://github.com/samsonboniface" target="_blank" rel="noopener noreferrer" aria-label="Visit Samson Boniface on GitHub"><i class="ri-github-fill"></i></a>
+                        <a href="https://x.com/samsonboniface" target="_blank" rel="noopener noreferrer" aria-label="Visit Samson Boniface on X"><i class="ri-twitter-x-fill"></i></a>
+                        <a href="https://whatsapp.com/channel/0029Vb73QUo5kg773F2hHt3i" target="_blank" rel="noopener noreferrer" aria-label="Visit Samson Boniface on WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61589237834141" target="_blank" rel="noopener noreferrer" aria-label="Visit Samson Boniface on Facebook"><i class="ri-facebook-fill"></i></a>
                     </div>
                 </div>
                 <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="email" placeholder="Your phone" required>
-                    <input type="text" placeholder="country">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <input type="text" name="name" placeholder="Your Name" autocomplete="name" maxlength="100" required>
+                    <input type="email" name="email" placeholder="Your Email" autocomplete="email" maxlength="254" required>
+                    <input type="tel" name="phone" placeholder="Your Phone" autocomplete="tel" maxlength="30" required>
+                    <input type="text" name="country" placeholder="Country" autocomplete="country-name" maxlength="100">
+                    <textarea name="message" placeholder="Your Message" rows="5" maxlength="5000" required></textarea>
                     <button type="submit" class="btn">Send Message</button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </div>
     </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="#home" class="logo">Samson<span>.</span></a>
+        <p>Frontend developer · Building thoughtful experiences for the web.</p>
+        <a href="#home" class="back-to-top">Back to top <i class="ri-arrow-up-line" aria-hidden="true"></i></a>
+    </footer>
 
 </div>
 

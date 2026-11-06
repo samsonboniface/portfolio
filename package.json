@@ -1,0 +1,18 @@
+{
+  "name": "samson-boniface-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio with an SMTP-backed contact form",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "nodemailer": "^10.1.0"
+  }
+}
